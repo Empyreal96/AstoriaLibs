@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84C8A9B6-7EF1-4A3C-B157-10859A615C3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Arcadia.Marketplace.PackageObjectModel</RootNamespace>
+    <AssemblyName>Microsoft.Arcadia.Marketplace.PackageObjectModel</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Apk\ApkObjectModel.cs" />
+    <Compile Include="Apk\ApkResourceHelper.cs" />
+    <Compile Include="Apk\CalledTrackedServiceMethodDetails.cs" />
+    <Compile Include="Apk\ClassMemberStatus.cs" />
+    <Compile Include="Apk\DevReportDexMethodInvocation.cs" />
+    <Compile Include="Apk\DevReportMetadata.cs" />
+    <Compile Include="Apk\EnumDescriptionAttribute.cs" />
+    <Compile Include="Apk\IDevApkPackageModel.cs" />
+    <Compile Include="Apk\IDevReportActivity.cs" />
+    <Compile Include="Apk\IDevReportActivityAlias.cs" />
+    <Compile Include="Apk\IDevReportDexModel.cs" />
+    <Compile Include="Apk\IDevReportIntentFilter.cs" />
+    <Compile Include="Apk\IDevReportIntentFilterData.cs" />
+    <Compile Include="Apk\IDevReportIntentReceiver.cs" />
+    <Compile Include="Apk\IDevReportManifestApplication.cs" />
+    <Compile Include="Apk\IDevReportManifestObjectModel.cs" />
+    <Compile Include="Apk\IDevReportManifestService.cs" />
+    <Compile Include="Apk\IDevReportMetadataContainer.cs" />
+    <Compile Include="Apk\IDevReportMiddlewareModel.cs" />
+    <Compile Include="Apk\IDevReportObjectModel.cs" />
+    <Compile Include="Apk\IDevReportReceiver.cs" />
+    <Compile Include="Apk\IDevReportServicesModel.cs" />
+    <Compile Include="Apk\ManifestActivity.cs" />
+    <Compile Include="Apk\ManifestActivityAlias.cs" />
+    <Compile Include="Apk\ManifestApplication.cs" />
+    <Compile Include="Apk\ManifestApplicationMetadata.cs" />
+    <Compile Include="Apk\ManifestContentProvider.cs" />
+    <Compile Include="Apk\ManifestInfo.cs" />
+    <Compile Include="Apk\ManifestIntentFilter.cs" />
+    <Compile Include="Apk\ManifestIntentFilterData.cs" />
+    <Compile Include="Apk\ManifestReceiver.cs" />
+    <Compile Include="Apk\ManifestServiceElement.cs" />
+    <Compile Include="Apk\ManifestUsesFeature.cs" />
+    <Compile Include="Apk\ManifestUsesPermission.cs" />
+    <Compile Include="Apk\ManifestUsesSdk.cs" />
+    <Compile Include="Apk\ManifestUtilities.cs" />
+    <Compile Include="Apk\Middleware.cs" />
+    <Compile Include="Apk\MiddlewareInfo.cs" />
+    <Compile Include="Apk\ServiceName.cs" />
+    <Compile Include="Apk\WindowsOSVersion.cs" />
+    <Compile Include="AppxImageType.cs" />
+    <Compile Include="AppxPackageArchitecture.cs" />
+    <Compile Include="AppxPackageConfiguration.cs" />
+    <Compile Include="AppxPackageType.cs" />
+    <Compile Include="ImageConfig.cs" />
+    <Compile Include="ImageConfigGenerator.cs" />
+    <Compile Include="IPackageDetails.cs" />
+    <Compile Include="IPackageInformation.cs" />
+    <Compile Include="IPortableRepositoryHandler.cs" />
+    <Compile Include="Permission\AppxCapability.cs" />
+    <Compile Include="Permission\CapabilityType.cs" />
+    <Compile Include="Permission\PermissionMap.cs" />
+    <Compile Include="Permission\PermissionMapItem.cs" />
+    <Compile Include="Permission\PermissionType.cs" />
+    <Compile Include="Portable\AggregateFeature.cs" />
+    <Compile Include="Portable\ApkFormatException.cs" />
+    <Compile Include="Portable\Apk\AnalyticsConfig.cs" />
+    <Compile Include="Portable\Apk\ApkConfigFile.cs" />
+    <Compile Include="Portable\Apk\ApkPackageConst.cs" />
+    <Compile Include="Portable\Apk\ApkResource.cs" />
+    <Compile Include="Portable\Apk\ApkResourceConfig.cs" />
+    <Compile Include="Portable\Apk\ApkResourceType.cs" />
+    <Compile Include="Portable\Apk\ApkResourceValue.cs" />
+    <Compile Include="Portable\Apk\GameServicesConfig.cs" />
+    <Compile Include="Portable\Apk\ManifestConst.cs" />
+    <Compile Include="Portable\Apk\ManifestObjectModelExtensions.cs" />
+    <Compile Include="Portable\Apk\ManifestString.cs" />
+    <Compile Include="Portable\Apk\ManifestStringResource.cs" />
+    <Compile Include="Portable\Apk\ScreenDensity.cs" />
+    <Compile Include="Portable\Appx\ApkScreenOrientationType.cs" />
+    <Compile Include="Portable\Appx\AppxScreenOrientationCategory.cs" />
+    <Compile Include="Portable\Appx\AppxScreenOrientationType.cs" />
+    <Compile Include="Portable\Appx\AppxUtilities.cs" />
+    <Compile Include="Portable\Appx\FileTypeAssociation.cs" />
+    <Compile Include="Portable\Appx\ScreenOrientationItem.cs" />
+    <Compile Include="Portable\Appx\ScreenOrientationMap.cs" />
+    <Compile Include="Portable\DecoderManifestNoApplicationException.cs" />
+    <Compile Include="Portable\DecoderManifestNoVersionCodeException.cs" />
+    <Compile Include="Portable\DecoderValueMustBeStringException.cs" />
+    <Compile Include="Portable\DeveloperReportBase.cs" />
+    <Compile Include="Portable\FeatureAnnotationAttribute.cs" />
+    <Compile Include="Portable\IDeveloperReport.cs" />
+    <Compile Include="Portable\IFeatureDetails.cs" />
+    <Compile Include="Portable\IFeatureLog.cs" />
+    <Compile Include="Portable\IReportBuilder.cs" />
+    <Compile Include="Portable\LogAnnotationAttribute.cs" />
+    <Compile Include="Portable\PackageObjectModelException.cs" />
+    <Compile Include="Portable\ReportBuilderInfoAttribute.cs" />
+    <Compile Include="Portable\ReportSectionH1.cs" />
+    <Compile Include="Portable\ReportSectionH2.cs" />
+    <Compile Include="Portable\SectionH1AnnotationAttribute.cs" />
+    <Compile Include="Portable\SectionH2AnnotationAttribute.cs" />
+    <Compile Include="Portable\WorkerLogKey.cs" />
+    <Compile Include="Portable\WorkerLogLevel.cs" />
+    <Compile Include="Portable\WorkerLogProvider.cs" />
+    <Compile Include="Portable\WorkLogMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Microsoft.Arcadia.Marketplace.PackageObjectModel.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.12</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Arcadia.Marketplace.PackageTableObjectModel.Portable\Microsoft.Arcadia.Marketplace.PackageTableObjectModel.Portable.csproj">
+      <Project>{0204FFF1-CB2C-47D9-9877-680C14692FE4}</Project>
+      <Name>Microsoft.Arcadia.Marketplace.PackageTableObjectModel.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Arcadia.Marketplace.Utils\Microsoft.Arcadia.Marketplace.Utils.csproj">
+      <Project>{8FE9E78E-27F1-45B6-9343-599FE2D718BF}</Project>
+      <Name>Microsoft.Arcadia.Marketplace.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
