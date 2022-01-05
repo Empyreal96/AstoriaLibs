@@ -1,7 +1,7 @@
 # AstoriaLibs
 Fixed up source for "Microsoft.Arcadia" libraries used by Astoria/WConnect tools.
 
-Currently only 1 .cs file still has errors
+
 
 ### Tools used
 - ILSpy
