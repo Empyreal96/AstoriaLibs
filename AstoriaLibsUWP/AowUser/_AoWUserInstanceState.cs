@@ -1,10 +1,11 @@
-namespace AowUser;
-
-public enum _AoWUserInstanceState
+namespace AowUser
 {
-	AoWUserInstanceStateInvalid,
-	AoWUserInstanceStateStopped,
-	AoWUserInstanceStateStarting,
-	AoWUserInstanceStateStarted,
-	AoWUserInstanceStateStopping
+	public enum _AoWUserInstanceState
+	{
+		AoWUserInstanceStateInvalid,
+		AoWUserInstanceStateStopped,
+		AoWUserInstanceStateStarting,
+		AoWUserInstanceStateStarted,
+		AoWUserInstanceStateStopping
+	}
 }

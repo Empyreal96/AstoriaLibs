@@ -1,19 +1,20 @@
 using System.Runtime.InteropServices;
 
-namespace AowUser;
-
-[StructLayout(LayoutKind.Sequential, Pack = 8)]
-public struct _AoWInstancePathMapping
+namespace AowUser
 {
-	[MarshalAs(UnmanagedType.LPWStr)]
-	public string WindowsPath;
+	[StructLayout(LayoutKind.Sequential, Pack = 8)]
+	public struct _AoWInstancePathMapping
+	{
+		[MarshalAs(UnmanagedType.LPWStr)]
+		public string WindowsPath;
 
-	[MarshalAs(UnmanagedType.LPWStr)]
-	public string MountPath;
+		[MarshalAs(UnmanagedType.LPWStr)]
+		public string MountPath;
 
-	public uint Uid;
+		public uint Uid;
 
-	public uint Gid;
+		public uint Gid;
 
-	public uint MappingFlags;
+		public uint MappingFlags;
+	}
 }
